@@ -26,7 +26,7 @@ class ClientRepository:
         update_json(self._jsonPath, clients)
 
     def clients(self):
-        clients = open(self._jsonPath)
+        clients = open_json(self._jsonPath)
         return clients
 
     def client(self, cpf: int):
